@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .main_logo {
+    color: #fff;
+    
+}
+.header i {
+    color: #f33333; 
+}
+.header .sub-menu {
+
+}
+.header .sub-menu .search {
+    color: white;
+}
+.header .sub-menu .list-menu {
+    color: white;
+}
+.main-section .title > div {
+    margin-top: 10px;
+}
+.main-section .title .title_main {
+    display: flex;
+}
+.main-section .title .title_tag {
+    color: blue;
+}
+.main-section .title .icons-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main-section .title .icons-group .good .good_count {
+    padding-left: 5px;
+}
