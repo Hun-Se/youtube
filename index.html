@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,102 +9,136 @@
     <!-- RESET CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
     <!-- FONT AWSOME -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <link rel="stylesheet" href="./main.css"/>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css" />
+    <script defer src="./main.js"></script>
 
     <title>YouTube</title>
 </head>
+
 <body>
-    <div>
-        <div class="header">
-            
-            <a href="/" class="main-logo"><i class="fab fa-youtube"></i>YouTube</a>
-            
-            <div class="sub-menu">
-                <a href="/" class="search">
-                    <span class="material-icons">
-                        search
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="title">YouTube</span>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+    <!-- Video Player -->
+    <section class="player">
+        <video controls autoplay loop src="/video/Nature - 31377.mp4"></video>
+    </section>
+    <div class="infoAndUpNext">
+        <section class="info">
+
+            <div class="metadata">
+
+                <ul class="hashtags">
+                    <li>#DreamCoding</li>
+                    <li>#YouTube</li>
+                    <li>#CloneCodding</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">
+                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS) 프론트엔드 개발자 입문편 연습 많이해서 프론트엔드 코딩연습 css 연습 Javascript 연습 html 연습 코알못 탈출하기
+                        클론코딩 유튜브 사이트 따라 만들기(HTML+CSS) 프론트엔드 개발자 입문편 연습 많이해서 프론트엔드 코딩연습 css 연습 Javascript 연습 html 연습 코알못 탈출하기   
                     </span>
-                </a>
-                <a href="" class="list-menu">
-                    <span class="material-icons">
-                        more_vert
-                    </span>
-                </a>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <span class="views">1M views 1 month ago</span>
+               
+                <ul class="actions">
+                    <li>
+                        <button>
+                            <i class="fas fa-thumbs-up"></i>
+                            좋아요
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-thumbs-down"></i>
+                            싫어요
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-share"></i>
+                            공유
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                            더보기
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fab fa-font-awesome-flag"></i>
+                            설정
+                        </button>
+                    </li>
+                </ul>
+                <div class="channel">
+                    <div class="metadata">
+                        <img src="./images/avatar.jpeg" alt="profile">
+                        <div class="info">
+                            <div class="name">유튜브 클론</div>
+                            <div class="subscribers">1M subcribers</div>
+                        </div>
+                    </div>
+                    <button class="subscribe">subcribe</button>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div class="vedio">
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/67stn7Pu7s4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <div class="main-section">
-            
-            <div class="title">
-                <div class="title_tag">
-                    #DreamCoding #YouTube #CloneCodding
-                </div>
-                <div class="title_main">
-                    <h1>클론코딩 유튜브 사이트 따라 만들기(HTML+CSS)</h1>
-                    <a href="" class="more-view">
-                        <span class="material-icons">
-                            keyboard_arrow_down
-                        </span>
-                    </a>
-                </div>
-                <h3>1주전</h3>
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="./images/1.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">예쁜 튤립, 유튜브 클론 사이트 만들기위한 예제 이미지1 아무 이미지니 가지고 왔다.</span>
+                        <sapn class="name">유튜브 클론코딩</sapn>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="more button"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="./images/2.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">유튜브 클론코딩 연습을 위한 이미지2, css를 이용하여 크기르 줄이자</span>
+                        <sapn class="name">유튜브 클론코딩</sapn>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="more button"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img"><img src="./images/3.jpg" alt=""></div>       
+                    <div class="info">
+                        <span class="title">html css 연습을 위한 이미지3 유튜브 클론코딩을 만들어 보자</span>
+                        <sapn class="name">유튜브 클론코딩</sapn>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="more button"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
 
-                <div class="icons-group">
-                    <div class="good">
-                        <a href="" class="material-icons">
-                            thumb_up
-                            </a>
-                        <div class="good_count">
-                            1
-                        </div>
-                    </div>
-                    <div class="">
-                        <a href="" class="material-icons">
-                            thumb_down_off_alt
-                            </a>
-                        <div class="good_count">
-                            0
-                        </div>
-                    </div>
-                    <div class="">
-                        <a href="" class="material-icons">
-                            reply
-                            </a>
-                        <div class="hate_count">
-                            share
-                        </div>    
-                    </div>
-                    <div class="">
-                        <a href="" class="material-icons">
-                            add
-                            </a>
-                        <div class="share">
-                            save
-                        </div>
-                    </div>
-                    <div class="">
-                        <a href="" class="material-icons">
-                            flag
-                            </a>
-                        <div class="good_count">
-                            report
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="footer">
-
-        </div>
+        </section>
     </div>
 </body>
+
 </html>
